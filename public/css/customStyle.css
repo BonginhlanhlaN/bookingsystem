@@ -1,0 +1,911 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+nav.top-nav{
+
+    width:100%;
+    height:auto;
+    background-color: lightblue;
+    margin-bottom: 20px;
+
+}
+
+nav.top-nav div#high-nav-part{
+
+    width:100%;
+    height: 35px;
+    background-color: white;
+
+}
+
+nav.top-nav div#high-nav-part img{
+
+    width:35px;
+    height:35px;
+    float:right;
+
+}
+
+nav.top-nav div#bottom-nav-part{
+
+    width:100%;
+    height: 85px;
+    background-color: white;
+    text-align: center;
+
+}
+
+nav.top-nav div#bottom-nav-part img{
+    width:110px;
+    height:110px;
+
+}
+
+/*Home Styles*/
+
+div.home-container{
+    width: 100%;
+    height: 100%;
+    /*background-image: url('/storage/BerveyBallz.png');*/
+}
+
+div.img-slider{
+
+    width:100%;
+    height:300px;
+    position: relative;
+    
+}
+
+div.img-slider img.slide-image{
+    height:100%;
+    width:100%;
+    position: absolute;
+    object-fit: cover;
+    border: none; 
+    opacity: 0; 
+    top: 0; 
+    left: 0;
+    -webkit-transition: opacity 2s linear;
+    -moz-transition: opacity 2s linear;
+    -o-transition: opacity 2s linear;
+    transition: opacity 2s linear;
+    
+}
+
+div.img-slider img.visible-image{
+    opacity: 1; 
+}
+
+div.img-slider div.socialmedia-container{
+    width: 100%;
+    height:55px;
+    text-align:center;
+    position: absolute;
+}
+
+div.img-slider div.socialmedia-container div.socialmedia-img-handle-container{
+    width: 65%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    border-radius: 25px;
+}
+
+div.img-slider div.socialmedia-container div.socialmedia-img-handle-container div.socialmedia-img-container{
+    width: 55px;
+    height:100%;
+    float: left;
+    border-radius: 50%;
+}
+
+div.img-slider div.socialmedia-container div.socialmedia-img-handle-container div.socialmedia-handle-container{
+    width: 150px;
+    height:100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div.img-slider div.socialmedia-container div.socialmedia-img-handle-container div.socialmedia-img-container img{
+    width:100%;
+    height: 100%;
+    opacity: 0.75;
+}
+
+div.img-slider div.socialmedia-container div.socialmedia-img-handle-container div.socialmedia-handle-container p{
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+div.img-slider img.slider-arrow{
+    position: absolute;
+    height:35px;
+    width:35px;
+    opacity: 0.8;
+
+}
+
+div.img-slider img#leftArrow{
+    left:0%;
+    top:45%;
+}
+
+div.img-slider img#rightArrow{
+    right:0%;
+    top:45%;
+}
+
+
+div.img-slider div.img-indicators{
+    width:100%;
+    height:auto;
+    position: absolute;
+    left: 40%;
+    bottom: 0%;
+}
+
+div.img-slider div.img-indicators div.img-indicator{
+    width:15px;
+    height:15px;
+    background-color: white;
+    float: left;
+    border-radius: 50%;
+    margin-right: 5px;
+    opacity: 0.8;
+}
+
+div.outer-notice-container{
+
+    width: 100%;
+    margin-top: 20px;
+    color: black;
+   
+}
+
+div.outer-notice-container h4{
+    color: black;
+    font-weight: bolder;
+}
+
+div.outer-notice-container div.scroll-img-container{
+    display: none;
+}
+
+div.outer-notice-container div.scroll-img-container img.scroll-notice-arrow{
+    display: none;
+}
+
+div.inner-notice-container{
+
+    width: 100%;
+    height: 230px;
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    
+}
+
+div.inner-notice-container div{
+    width: 45%;
+    float: none;
+    height: 100%;
+    margin: 0 0.25%;
+    display: inline-block;
+    border-radius: 10px;
+    vertical-align: top;
+    text-align: center;
+    white-space: normal;
+    /*background-image: linear-gradient(to bottom right,rgba(255 , 182 , 193  , 0.5) , rgba(252 , 249 , 189 , 0.7));*/
+    /*background-color: rgba(255 , 182 , 193  , 1);*/
+    zoom: 1;
+}
+
+div.inner-notice-container div.look-out-notice{
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    
+}
+
+div.inner-notice-container div.look-out-notice div.look-out-notice-image{
+    width:100%;
+    height:60%;
+    background-color: lightgrey;
+    
+}
+
+div.inner-notice-container div.look-out-notice div.look-out-notice-image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+div.inner-notice-container div.look-out-notice div.look-out-notice-description{
+    width:100%;
+    height:40%;
+    border: 1px solid lightgray;
+    border-radius: 0px 0px 10px 10px;
+}
+
+div.inner-notice-container div.look-out-notice div.look-out-notice-description p{
+    color: black;
+}
+
+
+
+div.inner-notice-container div.appointment-notice{
+    border: 1px solid lightpink;
+}
+
+div.inner-notice-container div.appointment-notice img{
+    width: 35px;
+    height: 35px;
+}
+
+div.inner-notice-container div.appointment-notice h4{
+    font-weight: bolder;
+}
+
+
+div.about-service-container{
+    text-align: center;
+}
+
+div.about-service-container img{
+    height: 130px;
+    width: 130px;
+    margin-top: 20px;
+    
+}
+
+div.about-service-container h3{
+    font-weight: bolder;
+    color:black;
+}
+
+div.services-container{
+    margin-top: 35px;
+}
+
+div.service-col{
+    height: 220px;
+    margin-bottom: 15px;
+    
+}
+
+div.service-col div.service-container{
+    width:100%;
+    height: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+}
+
+div.service-col div.service-container div.service-details{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    /*border-top-left-radius: 70px;*/
+}
+
+div.service-col div.service-container a{
+    text-decoration: none;
+}
+
+div.service-col div.service-container button.book-btn{
+    position: absolute;
+    width: 95px;
+    height: 35px;
+    /*background-color: #FFB6C1;*/
+    background-image: linear-gradient(to bottom right,rgba(255 , 192 , 203 , 1) , rgba(249 , 246 , 190 , 1));
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    right: 3%;
+    bottom: 3%;    
+}
+
+div.service-col div.service-container img{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    object-fit: cover;
+    /*border-top-left-radius: 70px;*/
+}
+
+
+@media screen and (min-width: 700px){
+    
+    div.img-slider{
+
+        width:90%;
+        height:575px;
+        margin: 0 auto;
+        
+    }
+
+    div.img-slider img.slide-image{
+        border-radius: 15px;
+        border: 1px solid lightgray;
+    }
+
+    div.img-slider div.socialmedia-container div.socialmedia-img-handle-container{
+        width: 30%;
+        height:100%;
+        background-color: rgba(0, 0, 0, 0.25);
+        display: inline-block;
+        border-radius: 25px;
+    }
+    
+    div.about-service-container img{
+        height: 150px;
+        width: 150px; 
+    }
+
+    div.img-slider div.img-indicators{
+        width:100%;
+        height:auto;
+        position: absolute;
+        left: 47%;
+        bottom: 0%;
+    }
+
+    div.outer-notice-container h4{
+        margin: 0 0 0 5%;
+    }
+
+    div.outer-notice-container div.scroll-img-container{
+        width:90%;
+        height: 400px;
+        position: absolute;
+        display: block;
+        margin: 0 0 0 5%;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    div.outer-notice-container div.scroll-img-container img.scroll-notice-arrow{
+        width: 50px;
+        height:50px;
+        position: absolute;
+        border-radius: 50%;
+        top:45%;
+        display: block;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        opacity: 0.85;
+    }
+
+    div.scroll-img-container img.left-scroll-notice-arrow{
+        left:0;
+    }
+
+    div.scroll-img-container img.right-scroll-notice-arrow{
+        right:0;
+    }
+
+    div.outer-notice-container div.inner-notice-container{
+        width: 90%;
+        height: 400px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    
+    
+
+    div.outer-notice-container div.inner-notice-container div{
+        width: 23%;
+    }
+
+    div.service-col{
+        height: 375px;
+        margin-bottom: 15px;
+    }
+
+    div.service-col div.service-container{
+        width:100%;
+        height: 375px;
+        border-radius: 10px;
+         /**box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    }
+}    
+
+
+/*End Home Styles*/
+
+
+/*Start LoginStyls*/
+
+div.login-container{
+    width:85%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+div.login-container div.branding-portion{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div.login-container div.branding-portion img{
+    width:160px;
+    height: 160px;
+}
+
+div.login-container div.login-credential-portion input.form-control{
+    height:50px
+}
+
+div.login-credential-portion div.login-interactions{
+
+    text-align: center;
+
+}
+
+div.login-container div.login-credential-portion form button.login-btn{
+    width:150px;
+    height:50px;
+    border-radius: 20px;
+    border: none;
+    background-color: #E9C3AD;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/*End Login Styles*/
+
+/*Start Registration */
+
+div.registration-container{
+    width:85%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+div.registration-container div.register-branding-portion{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div.registration-container  div.register-branding-portion img{
+    width:160px;
+    height: 160px;
+}
+
+div.registration-credatial-portion div.registration-interaction{
+    text-align: center;
+}
+
+div.registration-credatial-portion input.form-control{
+    height:40px;
+}
+
+div.registration-credatial-portion  form button.register-btn{
+
+    width:150px;
+    height:50px;
+    border-radius: 20px;
+    border: none;
+    background-color: #E9C3AD;
+    color: white;
+    margin-bottom: 10px;
+
+}
+
+/*End Registration Styles*/
+
+/* Start servicebooking */
+
+div.customization-period-dialog-container{
+    display: none;  /*Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+div.customization-period-dialog-container div.customization-period-dialog{
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+div.customization-period-dialog-container div.customization-period-dialog button{
+    background-color: rgba(255 , 192 , 203 , 1);
+    border: none;
+    color: white;
+    width:80px;
+    height:35px;
+    border-radius: 3px;
+    
+}
+
+div.customization-period-dialog-container div.customization-period-dialog img{
+    width:25px;
+    height:25px;
+    margin: 0 0 15px 0;
+}
+
+div.booking-month-container{
+    width:100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.booking-month-dissapear{
+    display: none;
+}
+
+div.booking-month-container div.month-details{
+    width: 100%;
+    height: 65px;
+    background-image: linear-gradient(to bottom right,rgba(255 , 192 , 203 , 1) , rgba(255 , 255 , 255 , 1));
+   
+}
+
+div.month-details p{
+    float: right;
+    color: white;
+    margin-right: 15px;
+    margin-top: 5px;
+    font-size: 30px;
+    
+}
+
+img#muji-Appointments{
+    width: 85px;
+    height:60px;
+    float: left;
+    margin-left: 15px;
+}
+
+img#next-month-btn{
+    width: 25px;
+    height:25px;
+    margin-top: 16px;
+    float: right;
+    margin-right: 15px;
+}
+div.month-details p.month-name{
+    padding-left: 4%;
+}
+
+table.calendar-table{
+
+    width:100%;
+
+}
+
+table.calendar-table th , table.calendar-table td{
+    text-align: center;
+}
+
+table.calendar-table th{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+table.calendar-table tr{
+    height: 65px;
+    
+}
+
+/*
+table.calendar-table tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table.calendar-table tr:nth-child(odd) {
+    background-color: #fff;
+}
+*/
+
+div.booking-time-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: none;
+    
+}
+
+div.booking-time-container div.already-booked{
+    text-align: center;
+    color: orangered;
+}
+
+div.booking-time-animation{
+    text-align: center;
+    display: none;
+}
+
+div.booking-time-animation img{
+    height: 100px;
+    width: 100px;
+}
+
+table.booking-time-table{
+
+    width:100%;
+
+}
+
+table.booking-time-table th , table.booking-time-table td{
+    text-align: center;
+}
+
+table.booking-time-table tr{
+    height: 65px;
+    
+}
+
+table.booking-time-table td{
+    border-radius: 10px;
+}
+
+table.booking-time-table td.booked{
+    background-color: gray;
+    color: white;
+}
+
+table.booking-time-table td.not-booked{
+    background-color: lightgray;
+    color: black;
+}
+
+table.booking-time-table td.time-past{
+    background-color: orangered;
+    color: black;
+}
+
+form.appoint-appointment-form input{
+
+    width: 95px;
+    height: 45px;
+    /*background-image: linear-gradient(to bottom right,rgba(233 , 195 , 173 , 1) , rgba(252 , 249 , 189 , 1));*/
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    margin-left: 0%;
+    background-color: gray;
+     
+}
+
+div.service-details{
+
+    width:100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+div.service-details section{
+    width:100%;
+    height: 75px;
+    
+}
+
+div.service-details section div.service-image-container{
+    width: 75px;
+    height: 75px;
+    float: left;
+    border-radius: 50%;
+}
+
+div.service-details section div.service-image-container img{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+div.service-details section div.service-name-starate-conatiner{
+    width: auto;
+    height: 75px;
+    
+}
+
+div.service-details section div.service-name-starate-conatiner img.star-service-icon{
+    width: 125px;
+    height: 35px;
+    top:0;
+}
+
+div.service-details section div.service-name-starate-conatiner p{
+    bottom:0;
+}
+
+div.service-details h4.service-available{
+    color:lightgreen;
+}
+
+div.service-details h4.service-unavailable{
+    color:red;
+}
+
+div.service-details p{
+
+    font-size: 16px;
+    
+}
+
+div.service-details nav.appointment-price{
+    
+    color: black;
+    
+}
+
+div.service-details nav.appointment-price p{
+    padding-top: 10px;
+    font-size: 25px;
+    color: lightpink;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+form.appoint-appointment-form{
+    margin: 15px 0 0 0;
+}
+
+div.bottom-appointment-icon-container{
+    text-align: center;
+    margin: 25px 0 0 0;
+}
+
+div.bottom-appointment-icon-container img{
+    width: 170px;
+    height: 170px;
+}
+
+
+@media screen and (min-width: 700px){
+
+    div.booking-month-container{
+        width:80%;
+        margin-left:10%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    div.month-details p{
+        float: right;
+        color: white;
+        margin-right: 15px;
+        margin-top: 5px;
+        font-size: 30px;
+        
+    }
+
+    img#muji-Appointments{
+        width: 85px;
+        height:60px;
+        float: left;
+        margin-left: 70px;
+    }
+    
+    img#next-month-btn{
+        width: 25px;
+        height:25px;
+        margin-top: 16px;
+        float: right;
+        margin-right: 180px;
+    }
+
+    table.calendar-table tr{
+
+        height: 75px;
+        
+    }
+   
+
+    div.service-details-container{
+
+        width:100%;
+        text-align: center;
+        margin-left:10%;
+        
+    }
+
+    div.service-details{
+        width:100%;
+        height: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    div.service-details-container div.service-details{
+        width:80%;
+        text-align: left;
+
+    }
+
+    form.appoint-appointment-form input{
+
+        width: 95px;
+        height: 45px;
+        /*background-image: linear-gradient(to bottom right,rgba(233 , 195 , 173 , 1) , rgba(252 , 249 , 189 , 1));*/
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        margin-left: 10%;
+        background-color: gray;
+         
+    }
+
+}   
+
+
+/** Appriciation Page */
+
+div.appreciation-container{
+    width:100%;
+    height: 100%;
+    
+    /*background-image: url('/storage/berveyAppreciationBackgroundImage.jpg');*/
+    background-image: url('/storage/BerveyBallz.png');
+    
+}
+
+div.appreciation-container div.appreciation-details{
+
+    width:85%;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+div.appreciation-container div.appreciation-details p{
+    color:black;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+div.appreciation-container div.appreciation-details button.btn-appreciate{
+
+    width: 100px;
+    height: 45px;
+    background-color: #E9C3AD;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+
+}
+
+div.appreciation-container div.appreciation-details button.btn-appreciate a{
+    color: white;
+}
+
+
+@media screen and (min-width: 700px){
+    
+}
